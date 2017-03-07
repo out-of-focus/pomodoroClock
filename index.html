@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+        "http://www.w3.org/TR/html4/frameset.dtd">
+<HTML>
+<HEAD>
+<TITLE>A simple pomodoro clock in your browser</TITLE>
+<link rel="shortcut icon" type="image/x-icon" href="picSnd/favicon.png" />
+<META name="keywords" lang="en"  content="FreeCodeCamp, pomodoro, clock">
+<link rel="stylesheet" href="pomodoro.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="pomodoro.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,300|Oswald:300|Raleway:100,300" rel="stylesheet">
+</HEAD>
+<BODY>
+<div id="headline">
+  <p id="title">POMODORO CLOCK</p>
+  <p id="hint"><a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="blank"> What is it?</a></p>
+</div>
+<div class="container">
+  <div class="box">
+    <div class="element">Session length</div>
+    <div class="element sub">(in minutes)</div>
+    <div class="element">
+      <input type="number" min = "1" max="180" id="sessionLeng" value="25"></div>
+  </div>
+  <div class="box">
+    <div class="element">Break length</div>
+    <div class="element sub">(in minutes)</div>
+    <div class="element">
+      <input type="number" id="breakLeng" max=99 value="5"></div>
+  </div>
+  <div id="clockRow">
+    <div id="measure">
+      <canvas id="circle" width=195 height=200></canvas>
+    </div>
+    <div id="clock" class="paused">
+      <div id="period">Session:</div>
+      <div id="time">25:00</div>
+    </div></div>
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,80 @@
+body {
+  background-color: #F9FBE7;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  color: black;
+  padding: 0px; margin: 0;
+}
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+#headline {
+  margin: 10vh 0 0 0;
+  background-color: #F4FF81;
+  padding: 10px;
+  box-shadow: 0px 1px 2px #C0CA33;
+  min-width: 190px;
+}
+#title {font-family: Raleway; font-weight: 300; font-size: 1.3em;}
+p {padding: 0px; margin: 2px}
+
+.container {
+  width: 100%;
+  padding: 35px 0;
+  margin: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-wrap: row wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.box{margin: 5px 3vw; padding: 5px; width:120px;
+}
+.element {width: 100%; padding: 5px 5px 0 5px; margin: 0px;}
+.sub{margin:0; padding: 0 5px; font-size: 0.8em}
+input{margin: 5px 0px; height: 35px; padding: 5px;
+  font-size: 1.7em; font-weight:300; font-family: Josefin Sans;
+  text-align: center; width:70px; 
+  background: none; box-shadow: none; border: none; 
+  border-bottom: 1px solid #D4E157;
+}
+input:focus{
+  border: none; box-shadow: 0 0 2px #D4E157;
+  outline: none !important;}
+input:hover{cursor: pointer}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+#clockRow{
+  width: 100vw;
+  text-align: center;
+  margin-top: 3vh;
+  justify-content:center; -webkit-justify-content: center;
+  align-items:center; -webkit-align-items:center}
+#measure{
+  margin: auto;
+  width: 195px; height: 200px;
+  background-image: url("picSnd/pomidor2-01.png");
+  background-repeat: no-repeat; background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+#clock{
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  width: 195px; height: 200px;
+  align-items: center; justify-content: center;
+  color: #F9FBE7;
+  position: relative;
+  left:-195;
+  top: -200px;
+}
+#period{font-size: 1em}
+#time{font-size: 2.2em;}
